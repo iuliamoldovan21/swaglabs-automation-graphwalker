@@ -1,0 +1,33 @@
+{
+	"name": "Sauce e-commerce",
+	"models": [
+		{
+			"name": "NavigationModel",
+			"generator": "random(edge_coverage(100) && vertex_coverage(100))",
+			"startElementId": "e0",
+			"vertices": [
+				{
+					"id": "v0",
+					"name": "v_login_page"
+				},
+				{
+					"id": "v1",
+					"name": "v_navigation_page"
+				}
+			],
+			"edges": [
+				{
+					"id": "e1",
+					"name": "e_perform_login",
+					"sourceVertexId": "v0",
+					"targetVertexId": "v1"
+				},
+				{
+					"id": "e0",
+					"name": "e_load_login_page",
+					"targetVertexId": "v0"
+				}
+			]
+		}
+	]
+}
