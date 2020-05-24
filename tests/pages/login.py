@@ -13,6 +13,7 @@ class LoginPage(BasePage):
         super().__init__(selenium, base_url=base_url, timeout=timeout, **url_kwargs)
 
     def login(self, username="", password=""):
+        print("Fill login credentials")
         self.find_element(*self._username_locator).clear()
         self.find_element(*self._username_locator).send_keys(username)
         self.find_element(*self._password_locator).clear()

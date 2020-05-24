@@ -12,7 +12,11 @@
 				},
 				{
 					"id": "v1",
-					"name": "v_navigation_page"
+					"name": "v_homepage"
+				},
+				{
+					"id": "v2",
+					"name": "v_homepage_product_added_to_cart"
 				}
 			],
 			"edges": [
@@ -26,6 +30,12 @@
 					"id": "e0",
 					"name": "e_load_login_page",
 					"targetVertexId": "v0"
+				},
+				{
+					"id": "e2",
+					"name": "e_add_to_cart_from_homepage",
+					"sourceVertexId": "v1",
+					"targetVertexId": "v2"
 				}
 			]
 		}
