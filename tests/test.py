@@ -6,6 +6,8 @@ from selenium.webdriver.firefox.options import Options
 from tests.pages.base import BasePage
 from tests.pages.login import LoginPage
 from tests.pages.home import HomePage
+from tests.pages.cart import CartPage
+from tests.pages.product import ProductPage
 
 HEADLESS = True
 BASE_URL = "https://www.saucedemo.com/index.html"
@@ -48,6 +50,14 @@ class BaseModel(unittest.TestCase):
     def e_do_nothing(self):
         pass
 
+    def e_open_cart(self):
+        page = BasePage(self.driver)
+        page.open_cart()
+
+    def v_cart_open(self):
+       page = CartPage(self.driver)
+       self.assertTrue(page.is_cart_open, "Cart page should be open")
+
 
 class NavigationModel(BaseModel):
     product_index = 0;
@@ -64,6 +74,18 @@ class NavigationModel(BaseModel):
         page = HomePage(self.driver)
         self.assertTrue(page.is_product_added_to_cart, "Product should be added to cart.")
 
+    def v_product_page(self):
+        page = ProductPage(self.driver)
+        self.assertTrue(page.is_product_page_open, "Product page should be open")
+
+    def v_product_added_to_cart_from_product_page(self):
+        page = ProductPage(self.driver)
+        self.assertTrue(page.is_product_added_to_cart, "Product should be added to cart")
+
+    def v_product_removed(self):
+        page = ProductPage(self.driver)
+        self.assertTrue(page.is_product_removed_from_cart, "Product should be removed from cart")
+
     def e_load_login_page(self):
         print("Load  the login page of site from: {}".format(BASE_URL))
         page = LoginPage(self.driver, BASE_URL)
@@ -77,3 +99,18 @@ class NavigationModel(BaseModel):
     def e_add_to_cart_from_homepage(self):
         page = HomePage(self.driver)
         self.product_index = page.add_to_cart_random_product()
+
+    def e_open_product_page(self):
+        page = HomePage(self.driver)
+        page.open_product_page()
+
+    def e_add_product_to_cart_from_product_page(self):
+        page = ProductPage(self.driver)
+        page.add_product_to_cart()
+
+    def e_remove_product_from_cart(self):
+        page = ProductPage(self.driver)
+        page.remove_product_from_cart()
+
+
+#command:    altwalker online -m models/navigation.json "a_star(reached_vertex(v_cart_open))" tests

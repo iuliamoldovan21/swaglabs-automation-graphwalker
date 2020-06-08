@@ -4,7 +4,6 @@ from tests.pages.base import BasePage
 
 
 class LoginPage(BasePage):
-
     _username_locator = (By.CSS_SELECTOR, '#user-name')
     _password_locator = (By.CSS_SELECTOR, '#password')
     _login_button_locator = (By.CSS_SELECTOR, ".btn_action")
@@ -23,4 +22,3 @@ class LoginPage(BasePage):
     @property
     def is_login_button_present(self):
         return self.is_element_present(*self._login_button_locator)
-
