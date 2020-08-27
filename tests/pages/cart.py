@@ -5,8 +5,13 @@ from tests.pages.base import BasePage
 
 class CartPage(BasePage):
 
-    _cart_label_locator = (By.CSS_SELECTOR, ".subheader")
+    _checkout_button_locator = (By.CSS_SELECTOR, "a.btn_action.checkout_button")
+    _continue_shopping_locator = (By.CSS_SELECTOR, "a.btn_secondary")
 
-    @property
-    def is_cart_open(self):
-        return self.is_element_present(*self._cart_label_locator)
+    def go_to_checkout_information(self):
+        print('Go to checkout information page')
+        self.find_element(*self._checkout_button_locator).click()
+
+    def click_continue_shopping_button(self):
+        self.find_element(*self._continue_shopping_locator).click()
+

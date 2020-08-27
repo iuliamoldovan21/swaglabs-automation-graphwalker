@@ -1,0 +1,162 @@
+[
+    {
+        "id": "e0",
+        "modelName": "NavigationModel",
+        "name": "e_load_login_page"
+    },
+    {
+        "id": "v0",
+        "modelName": "NavigationModel",
+        "name": "v_login_page"
+    },
+    {
+        "id": "e1",
+        "modelName": "NavigationModel",
+        "name": "e_perform_login"
+    },
+    {
+        "id": "v1",
+        "modelName": "NavigationModel",
+        "name": "v_homepage"
+    },
+    {
+        "id": "e4",
+        "modelName": "NavigationModel",
+        "name": "e_open_product_page"
+    },
+    {
+        "id": "v4",
+        "modelName": "NavigationModel",
+        "name": "v_product_page"
+    },
+    {
+        "id": "e5",
+        "modelName": "NavigationModel",
+        "name": "e_add_product_to_cart_from_product_page"
+    },
+    {
+        "id": "v5",
+        "modelName": "NavigationModel",
+        "name": "v_product_added_to_cart_from_product_page"
+    },
+    {
+        "id": "e7",
+        "modelName": "NavigationModel",
+        "name": "e_remove_product_from_cart"
+    },
+    {
+        "id": "v6",
+        "modelName": "NavigationModel",
+        "name": "v_product_removed"
+    },
+    {
+        "id": "e8",
+        "modelName": "NavigationModel",
+        "name": "e_open_cart"
+    },
+    {
+        "id": "v3",
+        "modelName": "NavigationModel",
+        "name": "v_cart_open"
+    },
+    {
+        "id": "e9",
+        "modelName": "NavigationModel",
+        "name": "e_next_test_case"
+    },
+    {
+        "id": "v1",
+        "modelName": "NavigationModel",
+        "name": "v_homepage"
+    },
+    {
+        "id": "e2",
+        "modelName": "NavigationModel",
+        "name": "e_add_to_cart_from_homepage"
+    },
+    {
+        "id": "v2",
+        "modelName": "NavigationModel",
+        "name": "v_homepage_product_added_to_cart"
+    },
+    {
+        "id": "e3",
+        "modelName": "NavigationModel",
+        "name": "e_open_cart"
+    },
+    {
+        "id": "v3",
+        "modelName": "NavigationModel",
+        "name": "v_cart_open"
+    },
+    {
+        "id": "e9",
+        "modelName": "NavigationModel",
+        "name": "e_next_test_case"
+    },
+    {
+        "id": "v1",
+        "modelName": "NavigationModel",
+        "name": "v_homepage"
+    },
+    {
+        "id": "e2",
+        "modelName": "NavigationModel",
+        "name": "e_add_to_cart_from_homepage"
+    },
+    {
+        "id": "v2",
+        "modelName": "NavigationModel",
+        "name": "v_homepage_product_added_to_cart"
+    },
+    {
+        "id": "e3",
+        "modelName": "NavigationModel",
+        "name": "e_open_cart"
+    },
+    {
+        "id": "v3",
+        "modelName": "NavigationModel",
+        "name": "v_cart_open"
+    },
+    {
+        "id": "e9",
+        "modelName": "NavigationModel",
+        "name": "e_next_test_case"
+    },
+    {
+        "id": "v1",
+        "modelName": "NavigationModel",
+        "name": "v_homepage"
+    },
+    {
+        "id": "e4",
+        "modelName": "NavigationModel",
+        "name": "e_open_product_page"
+    },
+    {
+        "id": "v4",
+        "modelName": "NavigationModel",
+        "name": "v_product_page"
+    },
+    {
+        "id": "e5",
+        "modelName": "NavigationModel",
+        "name": "e_add_product_to_cart_from_product_page"
+    },
+    {
+        "id": "v5",
+        "modelName": "NavigationModel",
+        "name": "v_product_added_to_cart_from_product_page"
+    },
+    {
+        "id": "e6",
+        "modelName": "NavigationModel",
+        "name": "e_open_cart"
+    },
+    {
+        "id": "v3",
+        "modelName": "NavigationModel",
+        "name": "v_cart_open"
+    }
+]

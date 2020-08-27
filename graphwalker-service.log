@@ -1,8 +1,8 @@
-Jun 08, 2020 11:01:24 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
+Aug 27, 2020 9:04:35 PM com.sun.jersey.server.impl.application.WebApplicationImpl _initiate
 INFO: Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
-Jun 08, 2020 11:01:24 PM org.glassfish.grizzly.http.server.NetworkListener start
+Aug 27, 2020 9:04:35 PM org.glassfish.grizzly.http.server.NetworkListener start
 INFO: Started listener bound to [0.0.0.0:8887]
-Jun 08, 2020 11:01:24 PM org.glassfish.grizzly.http.server.HttpServer start
+Aug 27, 2020 9:04:35 PM org.glassfish.grizzly.http.server.HttpServer start
 INFO: [HttpServer] Started.
 Try http://localhost:8887/graphwalker/hasNext or http://localhost:8887/graphwalker/getNext
 Press Control+C to end...
